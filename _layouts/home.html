@@ -4,6 +4,12 @@
 		<title>{{ page.title }}</title>
 	</head>
 	<body>
+		<h1>People</h1>
+		{% for person in site.people %}
+			{{person}}
+		{% endfor %}
+
+		<h1>Projects</h1>
 		{% for project in site.projects %}
 			{{project}}
 		{% endfor %}
